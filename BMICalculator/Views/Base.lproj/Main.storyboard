@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="555"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" red="0.38431376220000002" green="0.37647059560000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="highlightedColor" red="0.38431372549019605" green="0.37647059560000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="lHE-PA-lVf">
                                         <rect key="frame" x="0.0" y="565" width="374" height="21"/>
@@ -131,7 +131,7 @@
                         <outlet property="heightSlider" destination="Pky-qY-oVp" id="GxC-9X-fPj"/>
                         <outlet property="weightLabel" destination="LTF-aL-8qu" id="SWH-bn-lFY"/>
                         <outlet property="weightSlider" destination="s2X-C5-Zcz" id="d7g-dw-Gso"/>
-                        <segue destination="lkq-xS-Cin" kind="presentation" identifier="goToResult" id="vtF-sS-bhl"/>
+                        <segue destination="lkq-xS-Cin" kind="presentation" identifier="goToResultViewController" id="vtF-sS-bhl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -150,7 +150,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="I5P-Pc-Lq3">
-                                <rect key="frame" x="91" y="332.5" width="232" height="177.5"/>
+                                <rect key="frame" x="91" y="251.5" width="232" height="189.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="YOUR RESULT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYX-DY-jNL">
                                         <rect key="frame" x="0.0" y="0.0" width="232" height="42"/>
@@ -165,8 +165,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Underweight" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IV-CT-mxw">
-                                        <rect key="frame" x="0.0" y="153.5" width="232" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <rect key="frame" x="0.0" y="153.5" width="232" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -197,7 +197,7 @@
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
                             <constraint firstItem="CO5-IF-rJM" firstAttribute="bottom" secondItem="wMZ-LG-Y4P" secondAttribute="bottom" id="3t0-T6-C7A"/>
-                            <constraint firstItem="I5P-Pc-Lq3" firstAttribute="centerY" secondItem="A2l-zF-O8p" secondAttribute="centerY" id="7u5-hz-utT"/>
+                            <constraint firstItem="I5P-Pc-Lq3" firstAttribute="centerY" secondItem="A2l-zF-O8p" secondAttribute="centerY" constant="-75" id="7u5-hz-utT"/>
                             <constraint firstAttribute="bottom" secondItem="r83-N3-Ash" secondAttribute="bottom" id="9I3-hS-3By"/>
                             <constraint firstItem="r83-N3-Ash" firstAttribute="top" secondItem="A2l-zF-O8p" secondAttribute="top" id="GrP-GO-ygI"/>
                             <constraint firstAttribute="trailing" secondItem="r83-N3-Ash" secondAttribute="trailing" id="JYI-qM-yI1"/>
